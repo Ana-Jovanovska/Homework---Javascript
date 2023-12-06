@@ -1,4 +1,4 @@
-let input = prompt("Please enter your year of birth");
+let input = prompt("Please enter your year of birth?");
 let numberResult = Number(input);
 let zodiacNumber = (input - 4) % 12;
 if (numberResult === 0 || isNaN(numberResult)) {
