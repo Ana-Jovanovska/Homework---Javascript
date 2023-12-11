@@ -43,7 +43,4 @@ switch (zodiacNumber) {
   case 11:
     console.log("You are Pig");
     break;
-  default:
-    console.log("Enter valid year and try again!");
-    break;
 }
