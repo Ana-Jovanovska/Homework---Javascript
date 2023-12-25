@@ -1,0 +1,22 @@
+* {
+  padding: 1px;
+  margin: 2px;
+  text-align: center;
+}
+
+#table-container {
+  margin-top: 10px;
+}
+
+table {
+  padding: 5px;
+  width: 100%;
+}
+
+th,
+td {
+  background-color: antiquewhite;
+  border: 2px solid black;
+  padding: 8px;
+  text-align: left;
+}
