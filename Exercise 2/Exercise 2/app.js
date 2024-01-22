@@ -10,20 +10,20 @@ console.log("Function - Exercise 2");
 //Create an HTML document with two inputs, a button and an h1 header with some text. The first input should be for text size and the second for color. When the button is clicked the h1 header should change according to the input values ( change size as the first input value and color as the second input value ).
 //Use the functions that we declared earlier and use arrow function for the event listener of the button.
 
-const headerEl = document.querySelector("header");
+const headerEl = document.querySelector("#header");
 
-const changeTextColor = (element, color = "black") => {
-  element.style.color = color;
+const changeTextColor = (headerEl, color = "black") => {
+  headerEl.style.color = color;
 };
 
-const changeTextSize = (element, textSize = 24) => {
-  element.style.fontSize = `${textSize}px`;
+const changeTextSize = (headerEl, textSize = "24") => {
+  headerEl.style.fontSize = `${textSize}px`;
 };
 
 document.querySelector("#applyChangesBtn").addEventListener("click", () => {
   const colorInputValue = document.querySelector("#colorInput").value;
   const textSizeInputValue = document.querySelector("#textSizeInput").value;
 
-  changeTextColor("header", colorInputValue);
-  changeTextSize("header", textSizeInputValue);
+  changeTextColor(headerEl, colorInputValue);
+  changeTextSize(headerEl, textSizeInputValue);
 });
