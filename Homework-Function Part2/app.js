@@ -3,7 +3,7 @@ console.log("Function Part 2 is working");
 const STUDENTS_URL =
   "https://raw.githubusercontent.com/sedc-codecademy/skwd9-04-ajs/main/Samples/students_v2.json";
 
-const fetchStudents = (studentsApi) => {
+const fetchStudents => {
   fetch(STUDENTS_URL)
     .then((res) => res.json())
     .then((data) => {
@@ -67,4 +67,4 @@ const fetchStudents = (studentsApi) => {
     });
 };
 
-fetchStudents(STUDENTS_URL);
+fetchStudents;
